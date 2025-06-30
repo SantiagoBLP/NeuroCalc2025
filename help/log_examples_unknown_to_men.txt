@@ -1,0 +1,57 @@
+Microsoft Windows [Versión 10.0.19045.5487]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+G:\Simulaciones_KWANT_QE_ORCA\1_Quantum Espresso\Paper QE IA\Neuromorphic Calculator 5.0\python_dependencies>python assist_unpublished_material.py
+=== Unpublished Material Simulation – Expert Workflow ===
+
+Enter a name or identifier for your material: mp-9990123
+Enter the lattice parameter (in Angstroms): 3
+Enter the cutoff energy (ecutwfc) in Ry: 60
+Enter SCF k-point grid (e.g., 6 6 6 0 0 0): 6 6 6 0 0 0
+Enter NSCF k-point grid (e.g., 12 12 12 0 0 0): 12 12 12 0 0 0
+Enter the number of atomic species: 1
+
+Enter details for atomic species 1:
+  Element symbol (e.g., Fe): Si
+  Atomic mass (in atomic mass units): 30
+  Pseudopotential filename (e.g., Fe.pbesol.UPF): Si.pbe-n-kjpaw_psl.1.0.0.UPF.UPF
+Enter the total number of atoms in the unit cell: 2
+
+Enter details for atom 1:
+  Element symbol: Si
+  Fractional coordinate x: 0
+  Fractional coordinate y: 0
+  Fractional coordinate z: 0
+
+Enter details for atom 2:
+  Element symbol: Si
+  Fractional coordinate x: 1
+  Fractional coordinate y: 1
+  Fractional coordinate z: 1
+
+Querying Perplexity API for recommendations...
+
+AI Recommendations and Literature Suggestions:
+Based on the provided simulation parameters for the unpublished material 'mp-9990123', here are recommendations for optimization and relevant literature:
+
+1. Increase the cutoff energy to at least 80-100 Ry for better convergence of total energy and forces[1][2].
+
+2. Use denser k-point grids, such as 8x8x8 for SCF and 16x16x16 for NSCF calculations, to improve accuracy of electronic properties[3].
+
+3. Perform convergence tests by systematically increasing cutoff energy and k-point density until changes in total energy are less than 1 meV/atom[4].
+
+4. Consider using Gaussian smearing with a width of 0.01-0.02 Ry for improved convergence of metallic systems[5].
+
+5. Optimize the lattice parameter through a series of calculations at different volumes to determine the equilibrium structure[6].
+
+Relevant literature:
+
+Hasnip, P. J.; Refson, K.; Probert, M. I. J.; Yates, J. R.; Clark, S. J.; Pickard, C. J. Density Functional Theory in the Solid State. Philos. Trans. R. Soc. A Math. Phys. Eng. Sci. 2014, 372 (2011), 20130270. https://doi.org/10.1098/rsta.2013.0270
+
+Lejaeghere, K.; Bihlmayer, G.; Björkman, T.; Blaha, P.; Blügel, S.; Blum, V.; Caliste, D.; Castelli, I. E.; Clark, S. J.; Dal Corso, A.; et al. Reproducibility in Density Functional Theory Calculations of Solids. Science 2016, 351 (6280), aad3000. https://doi.org/10.1126/science.aad3000
+
+Monkhorst, H. J.; Pack, J. D. Special Points for Brillouin-Zone Integrations. Phys. Rev. B 1976, 13 (12), 5188–5192. https://doi.org/10.1103/PhysRevB.13.5188
+
+Scientific citations in the AI response are preserved.
+
+Are you satisfied with these recommendations? (Y/n):

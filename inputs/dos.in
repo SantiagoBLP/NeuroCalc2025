@@ -1,0 +1,5 @@
+&DOS
+prefix = 'qe'
+outdir = './tmp'
+fildos = 'dos.dat'
+/

@@ -1,0 +1,51 @@
+
+     Program PWSCF v.6.4.1 starts on 29Apr2025 at 19: 8:20 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      72 processor cores
+     Number of MPI processes:                 6
+     Threads/MPI process:                    12
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       6
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Error in routine readpp (6):
+     file ./pseudo\W.pbesol.UPF not found
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     stopping ...
+
+job aborted:
+[ranks] message
+
+[0-2] terminated
+
+[3] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 3
+
+[4] application aborted
+aborting MPI_COMM_WORLD (comm=0x44000000), error 1, comm rank 4
+
+[5] terminated
+
+---- error analysis -----
+
+[3-4] on DESKTOP-52QAGG0
+qe\pw.exe aborted the job. abort code 1
+
+---- error analysis -----

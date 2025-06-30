@@ -1,0 +1,40 @@
+&CONTROL
+calculation = 'nscf'
+prefix = 'qe'
+outdir = './tmp'
+pseudo_dir = './pseudo'
+/
+&SYSTEM
+ibrav = 1
+celldm(1) = 8.598257
+nat = 12
+ntyp = 3
+ecutwfc = 100.0
+nbnd = 109
+degauss = 0.005
+nspin = 1
+occupations = 'smearing'
+lda_plus_u = .false.
+/
+&ELECTRONS
+conv_thr = 1.0d-8
+/
+ATOMIC_SPECIES
+V 50.9415 V.pbe-spnl-rrkjus_psl.1.0.0.UPF
+O 15.999 O.pbe-n-rrkjus_psl.1.0.0.UPF
+W 183.84 W.pbesol.UPF
+ATOMIC_POSITIONS crystal
+V 0.0 0.0 0.0
+V 0.5 0.5 0.5
+V 0.0 0.5 0.0
+W 0.5 0.0 0.5
+O 0.25 0.25 0.0
+O 0.25 0.75 0.0
+O 0.75 0.25 0.5
+O 0.75 0.75 0.5
+O 0.0 0.25 0.25
+O 0.5 0.75 0.25
+O 0.5 0.25 0.75
+O 0.0 0.75 0.75
+K_POINTS automatic
+12 12 12 0 0 0

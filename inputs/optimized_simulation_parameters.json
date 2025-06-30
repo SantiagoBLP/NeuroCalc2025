@@ -1,0 +1,105 @@
+{
+    "simulation_type": "expert",
+    "material_name": "W-doped VO2",
+    "material_description": "Tungsten-doped vanadium dioxide; Mott insulator transitioning to metallic state with doping. Neuromorphic switching material.",
+    "important_properties": "Metal-insulator transition control, phase change behavior, resistive switching",
+    "lattice_parameter": 4.55,
+    "ecutwfc": 100.0,
+    "kpoints_scf": "6 6 6 0 0 0",
+    "kpoints_nscf": "12 12 12 0 0 0",
+    "atomic_species": [
+        {
+            "element": "V",
+            "mass": 50.9415,
+            "pseudopotential": "V.pbesol.UPF"
+        },
+        {
+            "element": "O",
+            "mass": 15.999,
+            "pseudopotential": "O.pbesol.UPF"
+        },
+        {
+            "element": "W",
+            "mass": 183.84,
+            "pseudopotential": "W.pbesol.UPF"
+        }
+    ],
+    "atomic_positions": [
+        {
+            "element": "V",
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        {
+            "element": "V",
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+        },
+        {
+            "element": "V",
+            "x": 0.0,
+            "y": 0.5,
+            "z": 0.0
+        },
+        {
+            "element": "W",
+            "x": 0.5,
+            "y": 0.0,
+            "z": 0.5
+        },
+        {
+            "element": "O",
+            "x": 0.25,
+            "y": 0.25,
+            "z": 0.0
+        },
+        {
+            "element": "O",
+            "x": 0.25,
+            "y": 0.75,
+            "z": 0.0
+        },
+        {
+            "element": "O",
+            "x": 0.75,
+            "y": 0.25,
+            "z": 0.5
+        },
+        {
+            "element": "O",
+            "x": 0.75,
+            "y": 0.75,
+            "z": 0.5
+        },
+        {
+            "element": "O",
+            "x": 0.0,
+            "y": 0.25,
+            "z": 0.25
+        },
+        {
+            "element": "O",
+            "x": 0.5,
+            "y": 0.75,
+            "z": 0.25
+        },
+        {
+            "element": "O",
+            "x": 0.5,
+            "y": 0.25,
+            "z": 0.75
+        },
+        {
+            "element": "O",
+            "x": 0.0,
+            "y": 0.75,
+            "z": 0.75
+        }
+    ],
+    "band_gap": 0.2,
+    "nbnd": 110,
+    "ai_recommendations": "## Evaluation of Simulation Parameters for W-Doped VO\u2082\n\n**Lattice Parameter (4.55 \u00c5):**  \nThis value is within the expected range for rutile-like VO\u2082 and is reasonable for moderate levels of W doping. Tungsten substitution for vanadium typically leads to a slight increase in lattice parameter due to the larger ionic radius of W\u2076\u207a compared to V\u2074\u207a, but values near 4.55 \u00c5 are reported and consistent with experimental findings for low to moderate doping levels[1][3].\n\n**Energy Cutoff (ecutwfc = 100.0 Ry):**  \nAn energy cutoff of 100 Ry is generally sufficient for accurate plane-wave DFT calculations involving transition metal oxides like VO\u2082, especially when using ultrasoft or PAW pseudopotentials. This value balances accuracy and computational efficiency. For more precise convergence, a short cutoff convergence test is recommended, but literature reports often use cutoffs in the 80\u2013120 Ry range for similar systems[1].\n\n**K-Point Grids (SCF: 6\u00d76\u00d76, NSCF: 12\u00d712\u00d712):**  \n- The SCF k-point grid (6\u00d76\u00d76) is typical for primitive unit cells or small supercells and provides a good compromise between accuracy and computational cost.  \n- The denser NSCF grid (12\u00d712\u00d712) is appropriate for band structure and density of states calculations, ensuring better Brillouin zone sampling for metallic or near-metallic systems like W-doped VO\u2082[1][3].\n- For large supercells (if modeling dilute W concentrations), consider reducing the grid density proportionally.\n\n**Number of Bands (nbnd = 110):**  \nSelecting 110 bands is suitable for capturing both the occupied and relevant unoccupied states, especially when investigating band gaps and conduction characteristics near the metal-insulator transition. Ensure this value covers all valence and low-lying conduction states\u2014adjust upward if the Fermi level increases with doping.\n\n**Band Gap (0.2 eV):**  \nA calculated band gap of 0.2 eV is in line with the experimentally observed reduction of the insulating gap in W-doped VO\u2082. W doping is well known to effectively decrease the transition temperature and narrow the band gap, sometimes even leading to a metallic state at room temperature, depending on the concentration[1][2][4].\n\n## Recommendations\n\n- **Convergence Testing:** For rigorous publication-quality results, perform convergence tests for both energy cutoff and k-point density.\n- **Supercell Size:** Verify that your supercell is large enough to model dilute W concentrations realistically. Too small a cell can artificially increase doping concentration and affect results.\n- **Spin Polarization:** Consider including spin polarization if modeling Mott physics or if magnetic ordering is suspected.\n- **Exchange-Correlation Functional:** Standard GGA may underestimate the band gap; hybrid functionals or DFT+U approaches may be needed for better quantitative agreement with experiment.\n\n## References\n\n1. Han, G. et al. \"Room Temperature Phase Transition of W\u2010Doped VO\u2082 by Atomic Layer Deposition.\" *Advanced Optical Materials* 2022, 10, 2201326. https://doi.org/10.1002/adom.202201326  \n2. Liu, C. et al. \"Facile synthesis, formation mechanism and thermochromic properties of W-doped VO\u2082(M) nanorods for smart window applications.\" *J. Mater. Chem. C* 2020, 8, 15506\u201315515. https://doi.org/10.1039/D0TC03436C  \n3. Mahapatra, A. et al. \"Structural, morphological, and optical properties of W\u2010doped VO\u2082 thin films.\" *International Journal of Applied Ceramic Technology* 2018, 15, 1556\u20131567. https://doi.org/10.1111/ijac.13170  \n4. Zhang, B. et al. \"Application of W-Doped VO\u2082 Phase Transition Mechanism for Thermochromic Smart Windows.\" *Photonics* 2023, 10, 1198. https://doi.org/10.3390/photonics10111198  \n\nThese settings are generally appropriate and efficient for W-doped VO\u2082, but always confirm with system-specific convergence tests and consider the physical context of your simulation.",
+    "formula_pretty": "W-doped_VO2"
+}
