@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Barrionuevo
+    given-names: Santiago D.
+    orcid: "https://orcid.org/0000-0002-4870-343X"
+  - family-names: Aguirre
+    given-names: Myriam H.
+    orcid: "https://orcid.org/0000-0002-1296-4793"
+title: "Neuromorphic Materials Calculator 2025 (NMC2025)"
+version: "1.0.0"
+doi: "10.5281/zenodo.17143512"
+date-released: 2025-09-17
+url: "https://github.com/SantiagoBLP/NeuroCalc2025"
