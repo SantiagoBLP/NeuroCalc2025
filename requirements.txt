@@ -1,0 +1,6 @@
+numpy>=1.22
+scipy>=1.8
+matplotlib>=3.5
+ase>=3.22
+sisl>=0.12
+quantum-espresso  # wrapper or path, specify if included in repo
