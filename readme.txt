@@ -1,6 +1,6 @@
-Hello this is NMC 2025 by Santiago Barrionuevo
+Hello this is NMC by Santiago Barrionuevo
 
-# Neuromorphic Materials Calculator 2025 (NMC2025)
+# Neuromorphic Materials Calculator (NMC)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17143512.svg)](https://doi.org/10.5281/zenodo.17143512)
 
@@ -21,5 +21,5 @@ It allows students and researchers to set up, run, and analyze materials simulat
 ## Installation (Windows)
 
 1. Download the latest release from [Zenodo](https://doi.org/10.5281/zenodo.17143512) or GitHub.
-2. Extract the package to a local folder, e.g. `C:\NMC2025\`.
+2. Extract the package to a local folder, e.g. `C:\NMC\`.
 3. And run the installer
